@@ -10,7 +10,8 @@ export const Container = styled.div`
     font-size: 14px;
     font-weight: bold;
     opacity: 0;
-    transition: opacity 0.4s;
+    transition-property: opacity visibility;
+    transition: ease 0.4s;
     visibility: hidden;
 
     position: absolute;

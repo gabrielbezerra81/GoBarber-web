@@ -1,18 +1,17 @@
 import React from "react";
 import GlobalStyle from "./styles/global";
-import SignIn from "./pages/SignIn/SignIn";
-import SignUp from "./pages/SignUp/SignUp";
-import AuthProvider from "./context/authContext";
+import AppProvider from "./context";
+import Routes from "./routes/router";
+import { BrowserRouter } from "react-router-dom";
 
 const App = () => {
   return (
-    <>
-      <AuthProvider>
-        <SignIn />
-        {/* <SignUp /> */}
-      </AuthProvider>
+    <BrowserRouter>
+      <AppProvider>
+        <Routes />
+      </AppProvider>
       <GlobalStyle />
-    </>
+    </BrowserRouter>
   );
 };
 

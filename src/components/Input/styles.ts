@@ -11,7 +11,8 @@ interface ContainerProps {
 export const Container = styled.div<ContainerProps>`
   background: #232129;
   border-radius: 10px;
-  padding: 16px;
+  padding: 0 16px;
+  height: 60px;
   width: 100%;
 
   border: 2px solid #232129;
@@ -52,6 +53,7 @@ export const Container = styled.div<ContainerProps>`
     background: transparent;
     border: none;
     flex: 1;
+    height:100%;
     color: #f4ede8;
 
     &::placeholder {
